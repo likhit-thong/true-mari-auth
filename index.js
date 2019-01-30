@@ -3,6 +3,10 @@
 
 const {verifyAuthToken} = require('./lib/verify-token')
 const {requirePermissionAccess} = require('./lib/permission-access')
+const {registerAuthIntent} = require('./lib/register-intent')
 
-exports.verifyAuthToken = verifyAuthToken
-exports.requirePermissionAccess = requirePermissionAccess 
+module.exports = { 
+  registerAuthIntent ,
+  verifyAuthToken ,
+  requirePermissionAccess
+}
